@@ -1,3 +1,5 @@
+import { Key } from "../src/types";
+
 export const mockInvalidCredentials = {
   error: "Unauthorized",
   reason: "Invalid or missing credentials.",
@@ -15,10 +17,10 @@ export const mockListKeys = {
   ],
 };
 
-export const mockKey = {
-  id: "string",
+export const mockKey: Key = {
   key: "string",
   comment: "string",
   created: "string",
   scopes: ["member"],
+  api_key_id: "fake-api-key-id",
 };

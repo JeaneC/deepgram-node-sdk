@@ -98,7 +98,7 @@ export class Keys {
    * @param projectId Unique identifier of the project to create an API key under
    * @param keyId Unique identifier for the key to delete
    */
-  async delete(projectId: string, keyId: string): Promise<void> {
+  async delete(projectId: string, keyId: string): Promise<{ message: string }> {
     return this._request(
       "DELETE",
       this._credentials,
