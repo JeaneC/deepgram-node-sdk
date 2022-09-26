@@ -1,10 +1,10 @@
-import { assert } from "chai";
+import chai, { assert } from "chai";
 import { mockInvalidCredentials, mockKey } from "./mockResults";
 import nock from "nock";
 import * as https from "../src/httpRequest";
 
 import { Keys } from "../src/keys";
-
+chai.should();
 const fakeCredentials = "testKey:testSecret";
 const fakeUrl = "fake.url";
 const fakeProjectId = "27e92bb2-8edc-4fdf-9a16-b56c78d39c5b";
